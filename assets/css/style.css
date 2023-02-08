@@ -32,7 +32,7 @@ li {
   font-size: 1.5rem;
 }
 
-#li {
+.li {
   text-decoration: none;
   color: var(--text-color1);
 }
@@ -47,7 +47,7 @@ h2 {
 }
 
 img {
-  border: 3px solid gray;
+  border: 5px solid gray;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -75,19 +75,40 @@ p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
 }
 
-/* .section-2 {
-} */
+img:hover {
+  border: 5px solid #7decf0;
+}
 
+.container {
+  position: relative;
+}
+
+/* Created a placeholder (i think) for where the text overlay */
+/* .bottom-left {
+  position: absolute;
+  bottom: 8px;
+  top: 16px;
+  */
+
+/* how do I get the content within the foot to align to look the same as the header? */
 footer {
-  text-align: center;
   font-size: 1.2rem;
   background: var(--background-1);
-  padding: 20px;
+  padding: 40px;
   color: var(--text-color1);
 }
+
+h3 {
+  padding-left: 15px;
+  font-size: 1.5rem;
+}
+
+/* ul {
+  display: flex;
+  justify-content: space-between;
+} */
 
 /* nav ul {
   display: flex;
