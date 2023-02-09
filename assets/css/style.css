@@ -144,7 +144,7 @@ img {
 #img-5 {
   position: var(--image-orientation);
   top: 238%;
-  right: 48%;
+  right: 51%;
   z-index: 1;
   background-color: var(--overlay-color);
   color: white;
