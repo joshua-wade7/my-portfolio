@@ -184,3 +184,25 @@ h3 {
   padding-left: 15px;
   font-size: 1.5rem;
 }
+
+/* I believe this should be the way this selector should be applied, however, I see no apparent change when testing these media queries.  Will continue to test. */
+@media screen and (max-width: 992px) {
+  header,
+  footer {
+    flex-direction: column;
+    font-size: 1.2 rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #img-1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1 rem;
+  }
+}
