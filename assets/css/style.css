@@ -1,7 +1,12 @@
+/* Go back through the style sheet and look for any DRY content.  */
+
 :root {
   --background-1: linear-gradient(#256fa1, #4b697d);
   --background-2: linear-gradient(#e8ebed, #cccdcf);
   --text-color1: white;
+  --overlay-color: #4b697d;
+  --image-position: relative;
+  --image-orientation: absolute;
 }
 
 * {
@@ -52,6 +57,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 5px 5px #4b697d;
 }
 
 .img-1 {
@@ -59,6 +65,77 @@ img {
   height: 50%;
   margin-left: 25%;
   margin-top: 5%;
+  margin-bottom: 2%;
+  position: var(--image-position);
+}
+
+/* I am sure this is not best practice for aligning a content overlay to an image, but this is what I could get to work for me.*/
+
+#img-1 {
+  position: var(--image-orientation);
+  top: 91%;
+  right: 63%;
+  z-index: 1;
+  background-color: var(--overlay-color);
+  color: white;
+  padding: 10px;
+}
+
+.img-2 {
+  position: var(--image-position);
+}
+
+#img-2 {
+  position: var(--image-orientation);
+  top: 148%;
+  right: 85%;
+  z-index: 1;
+  background-color: var(--overlay-color);
+  color: white;
+  padding: 10px;
+}
+
+.img-3 {
+  position: var(--image-position);
+}
+
+#img-3 {
+  position: var(--image-orientation);
+  top: 148%;
+  right: 49%;
+  z-index: 1;
+  background-color: var(--overlay-color);
+  color: white;
+  padding: 10px;
+}
+
+.img-4 {
+  position: var(--image-position);
+}
+
+#img-4 {
+  position: var(--image-orientation);
+  top: 148%;
+  right: 20%;
+  z-index: 1;
+  background-color: var(--overlay-color);
+  color: white;
+  padding: 10px;
+}
+
+.img-5 {
+  position: var(--image-position);
+  margin-top: 5%;
+}
+
+#img-5 {
+  position: var(--image-orientation);
+  top: 186%;
+  right: 48%;
+  z-index: 1;
+  background-color: var(--overlay-color);
+  color: white;
+  padding: 10px;
 }
 
 .section-1 {
@@ -89,14 +166,6 @@ img:hover {
   position: relative;
 }
 
-/* Created a placeholder (i think) for where the text overlay */
-/* .bottom-left {
-  position: absolute;
-  bottom: 8px;
-  top: 16px;
-  */
-
-/* how do I get the content within the foot to align to look the same as the header? */
 footer {
   display: flex;
   justify-content: space-between;
@@ -110,14 +179,3 @@ h3 {
   padding-left: 15px;
   font-size: 1.5rem;
 }
-
-/* ul {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* nav ul {
-  display: flex;
-  justify-content: space-between;
-  min-width: 500px;
-} */
